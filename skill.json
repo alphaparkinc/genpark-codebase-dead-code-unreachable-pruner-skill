@@ -1,0 +1,33 @@
+{
+  "name": "genpark-codebase-dead-code-unreachable-pruner-skill",
+  "version": "1.0.0",
+  "description": "AST-level static call-graph analyzer and dead code pruner identifying orphaned functions, unreachable methods, and token-bloat clusters.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "coding-agent",
+    "dead-code",
+    "static-analysis",
+    "ast",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "build_call_graph",
+      "description": "Construct directed caller-callee call graph from Python source code."
+    },
+    {
+      "name": "find_unreachable_symbols",
+      "description": "Identify unreferenced functions and classes from specified entry points."
+    },
+    {
+      "name": "calculate_token_savings",
+      "description": "Estimate lines of code and LLM token savings from dead code elimination."
+    },
+    {
+      "name": "run_benchmark_dead_code_pruning",
+      "description": "Execute dead code pruning test cases on sample codebase."
+    }
+  ]
+}
